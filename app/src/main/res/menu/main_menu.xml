@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_slide"
+            android:icon="@drawable/ic_action_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_akun"
+            android:icon="@drawable/ic_akun"
+            android:title="Akun"/>
+    </group>
+
+
+    <item android:title="Belanjaanku">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_history"
+                    android:icon="@drawable/histori"
+                    android:title="Histori Pemesanan" />
+
+                <item
+                    android:id="@+id/nav_wishlist"
+                    android:icon="@drawable/wishlist"
+                    android:title="Wishlist" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Bantuan dan Masukan">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_bantuan"
+                    android:icon="@drawable/bantuan"
+                    android:title="Bantuan dan Hubungi Kami" />
+
+                <item
+                    android:id="@+id/nav_saran"
+                    android:icon="@drawable/masukan"
+                    android:title="Kirim Saran Kepada Kami" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

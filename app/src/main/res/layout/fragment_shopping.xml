@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ShoppingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masuk dan Belanja Sekarang"
+            android:textColor="#273EA5"
+            android:textAlignment="center"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="kamu harus masuk untuk melihat daftar pesanan-mu"
+            android:fontFamily="@font/lato"
+            android:textColor="#030303"
+            android:textSize="18sp"
+            android:padding="4dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:textAlignment="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:text="hydro"
+                android:textColor="#273EA5"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:text="lite"
+                android:textColor="#273EA5"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_daftar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/shape1"
+                android:backgroundTint="#227AA0"
+                android:fontFamily="@font/open_sans"
+                android:text="DAFTAR"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/shape1"
+                android:backgroundTint="#273EA5"
+                android:fontFamily="@font/open_sans"
+                android:text="MASUK"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AkunEditActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/hello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/lato_bold"
+                    android:letterSpacing="0.05"
+                    android:text="Sunting Profil"
+                    android:textColor="#273EA5"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bar">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/bar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground">
+
+            <LinearLayout
+                android:id="@+id/lv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bar"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:src="@drawable/aqil" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/lato"
+                    android:text="Ganti Foto"
+                    android:textAlignment="center"
+                    android:textColor="#030303" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:padding="8dp"
+                    android:text="Jenis Kelamin"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/formjk2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/formjk"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupNb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioLaki"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans"
+                            android:text="Laki-Laki"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioPerempuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="22dp"
+                            android:fontFamily="@font/open_sans"
+                            android:text="Perempuan"
+                            android:textSize="18sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/nama_depan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableRight="@drawable/ic_sunting"
+                    android:fontFamily="@font/open_sans"
+                    android:hint="Nama Depan"
+                    android:padding="4dp"
+                    app:met_floatingLabel="normal" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableRight="@drawable/ic_sunting"
+                    android:fontFamily="@font/open_sans"
+                    android:hint="Nama Belakang"
+                    android:padding="4dp"
+                    app:met_floatingLabel="normal" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableRight="@drawable/ic_sunting"
+                    android:fontFamily="@font/open_sans"
+                    android:hint="Email"
+                    android:padding="4dp"
+                    app:met_floatingLabel="normal" />
+
+                <LinearLayout
+                    android:id="@+id/formnomor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/formemail"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/indonesia" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/open_sans"
+                        android:text="+62"
+                        android:textSize="18sp" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_sunting"
+                        android:fontFamily="@font/open_sans"
+                        android:hint="Nomor Handphone"
+                        android:padding="4dp"
+                        app:met_floatingLabel="normal" />
+                </LinearLayout>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableRight="@drawable/ic_sunting"
+                    android:fontFamily="@font/open_sans"
+                    android:hint="Kata Sandi"
+                    android:inputType="textPassword"
+                    android:padding="4dp"
+                    app:met_floatingLabel="normal" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/shape1"
+                    android:backgroundTint="#273EA5"
+                    android:fontFamily="@font/lato_bold"
+                    android:letterSpacing="0.05"
+                    android:text="SIMPAN"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+    </ScrollView>
+
+</RelativeLayout>

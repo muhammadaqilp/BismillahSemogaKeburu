@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/wlwl"
+    tools:context=".LoginActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/hello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/lato_bold"
+                    android:letterSpacing="0.05"
+                    android:text="Masuk"
+                    android:textColor="#273EA5"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/judulll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <TextView
+                    android:id="@+id/judul_edukasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center"
+                    android:letterSpacing="0.1"
+                    android:text="hydro"
+                    android:textColor="#273EA5"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/judul_edukasi2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center"
+                    android:letterSpacing="0.1"
+                    android:text="lite"
+                    android:textColor="#273EA5"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/judul_edukasi4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="Ayo masuk supaya belanja lebih mudah"
+                android:textAlignment="center"
+                android:textColor="#030303"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="Nama Depan"
+            android:padding="4dp"
+            app:met_floatingLabel="normal"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:inputType="textPassword"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:hint="Kata Sandi"
+            android:padding="4dp"
+            app:met_floatingLabel="normal"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/masuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape1"
+            android:text="Masuk ke hydrolite"
+            android:backgroundTint="#273EA5"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/lato_bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atau bisa juga masuk dengan"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="#343F4B"
+            android:textSize="14sp"/>
+
+        <Button
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape4"
+            android:backgroundTint="?android:windowBackground"
+            android:text="Google"
+            android:textAllCaps="false"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="#030303"
+            android:fontFamily="@font/lato_bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/formmasuk"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#C0CCDA"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:text="Belum Punya Akun?"
+            android:textColor="#343F4B"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/daftarsekarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="Daftar Sekarang"
+            android:textColor="#273EA5"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
